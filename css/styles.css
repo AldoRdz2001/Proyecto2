@@ -1,0 +1,22 @@
+:root{
+    --No_activo: #8A8A8A;
+    --Activo: #000000;
+    --Blanco: #ffffff;
+    --Blanco_claro: #FFFFFFCC;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+}
