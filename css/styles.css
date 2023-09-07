@@ -3,6 +3,8 @@
     --Activo: #000000;
     --Blanco: #ffffff;
     --Blanco_claro: #FFFFFFCC;
+    --footer_menu: 'Poppins', sans-serif;
+    --footer_p: 'Inter', sans-serif;
 }
 
 html {
@@ -18,5 +20,58 @@ html {
 
 body {
     font-size: 1.6rem;
-    line-height: 2;
+}
+
+
+/* Globales */
+footer{
+    background-color: black;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    margin-top: 5rem;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.blanco{
+    color: var(--Blanco);
+}
+
+.blanco_claro{
+    color: var(--Blanco_claro);
+}
+
+
+/* Footer  */
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor__footer{
+    height: 33.75rem;
+}
+
+.footer__logo{
+    width: 10rem;
+}
+
+.footer__logo__texto{
+    font-family: var(--footer_p);
+}
+
+.footer__logo__texto--principal{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: .1rem;
+}
+
+.footer__logo__texto--secundario{
+    font-weight: 400;
+    font-size: 1.5rem;
 }
