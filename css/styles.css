@@ -3,11 +3,14 @@
     --Activo: #000000;
     --Blanco: #ffffff;
     --Blanco_claro: #FFFFFFCC;
+    --Gris_claro: #d8d8d8;
     --Amarillo: #F7DA00;
     --Azul: #2E4087;
     --Rojo: #CE2E1D;
     --footer_menu: 'Poppins', sans-serif;
     --footer_p: 'Inter', sans-serif;
+    --titulos:  'Syncopate', Arial, Helvetica, sans-serif;
+    --nombre_producto: 'Inter', sans-serif;
 }
 
 html {
@@ -58,7 +61,7 @@ a {
 .header {
     color: #000;
     text-align: center;
-    font-family: Syncopate, Arial, Helvetica, sans-serif;
+    font-family: var(--titulos);
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase; 
@@ -121,6 +124,84 @@ a {
     border-radius: 2rem;
     transition: all .3s;
   }
+/* Productos  */
+
+h1 {
+  font-family: var(--titulos);
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.contenedor-catalogo {
+	display: grid;
+    margin: 2rem 10rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8rem;
+}
+
+.card {
+	position: relative;
+	overflow: hidden;
+  background-color: var(--Blanco);
+	display: inline-block;
+}
+
+.card .textos {
+  padding: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.card h2{
+  color: var(--Activo);
+  font-family: var(--nombre_producto);
+  font-size:small;
+  font-weight: 100;
+  color: var(--No_activo);
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+.card h3{
+    color: var(--Activo);
+    font-family: var(--titulos);
+    font-size:large;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.card .textos img:hover{
+  transform: scale(1.1);
+	cursor: pointer;
+}
+
+.boton {
+	background: var(--Blanco_claro);
+  color: var(--No_activo);
+	display: block;
+	width: 100%;
+  margin-top: -1rem;
+  font-family: var(--nombre_producto);
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 10px;
+	border: .15rem solid var(--No_activo);
+	cursor: pointer;
+  border-radius: 2rem;
+}
+
+.boton:hover{
+  color: var(--Blanco);
+  border: none;
+    background-color: var(--Activo);
+    transform: scale(1.05);
+    border-radius: 2rem;
+}
 
   /* Footer  */
 
