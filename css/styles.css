@@ -399,3 +399,21 @@ h1 {
   display: grid;
   text-align: center;
 }
+
+/* Registro */
+.registro__btn {
+  border-radius: .5rem;
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 7px;
+  color: var(--Blanco);
+  background: var(--Activo);
+  font-family: var(--texto_syncopate);
+  text-align: center;
+  border: none;
+  margin-top: 2rem;
+}
+
+.registro__btn:hover {
+  cursor: pointer;
+}
