@@ -1,58 +1,59 @@
 :root {
-    --No_activo: #8A8A8A;
-    --Activo: #000000;
-    --Blanco: #ffffff;
-    --Blanco_claro: #FFFFFFCC;
-    --Gris_claro: #d8d8d8;
-    --Amarillo: #F7DA00;
-    --Azul: #2E4087;
-    --Rojo: #CE2E1D;
-    --footer_menu: 'Poppins', sans-serif;
-    --footer_p: 'Inter', sans-serif;
-    --titulos:  'Syncopate', Arial, Helvetica, sans-serif;
-    --nombre_producto: 'Inter', sans-serif;
+  --No_activo: #8A8A8A;
+  --Activo: #000000;
+  --Blanco: #ffffff;
+  --Blanco_claro: #FFFFFFCC;
+  --Gris_claro: #d8d8d8;
+  --Amarillo: #F7DA00;
+  --Azul: #2E4087;
+  --Rojo: #CE2E1D;
+  --footer_menu: 'Poppins', sans-serif;
+  --footer_p: 'Inter', sans-serif;
+  --titulos: 'Syncopate', Arial, Helvetica, sans-serif;
+  --nombre_producto: 'Inter', sans-serif;
+  --texto_syncopate: 'Syncopate', sans-serif;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 
 /* Globales */
 footer {
-    background-color: black;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-    margin-top: 5rem;
-    height: 33.75rem;
+  background-color: black;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  margin-top: 5rem;
+  height: 33.75rem;
 }
 
 .contenedor {
-    width: min(90%, 120rem);
-    margin: 0 auto;
+  width: min(90%, 120rem);
+  margin: 0 auto;
 }
 
 .blanco {
-    color: var(--Blanco);
+  color: var(--Blanco);
 }
 
 .blanco_claro {
-    color: var(--Blanco_claro);
+  color: var(--Blanco_claro);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Globales */
@@ -85,71 +86,73 @@ a {
 /*Menú de navegación*/
 
 .header {
-    color: #000;
-    text-align: center;
-    font-family: var(--titulos);
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase; 
-    background-color: var(--Blanco);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+  color: #000;
+  text-align: center;
+  font-family: var(--titulos);
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: var(--Blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
 }
 
 .logo {
-    display:flex;
-    margin-left: 3rem;
-    }
+  display: flex;
+  margin-left: 3rem;
+}
 
-    .menu{
-    flex-grow: 5;
-      display: flexbox;
-      flex-direction: wrap;
-      text-align: center;
-      margin: 0 3rem;
-    }
-    
-    .iconos {
-      margin-right: 2rem;
-    }
-    
-    .menu a{
-    color:var(--No_activo);
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight:100;
-    padding: 1rem;
-    transition: 0.4s;
-    font-size: 1.25rem;
-    }
-    
-    .menu a:hover{
-    color:var(--Activo);
-    font-weight: 700;
-  }
-  
-  .menu-iconos, ul{
-    list-style: none;
-  }
+.menu {
+  flex-grow: 5;
+  display: flexbox;
+  flex-direction: wrap;
+  text-align: center;
+  margin: 0 3rem;
+}
 
-  .menu-iconos > li{
+.iconos {
+  margin-right: 2rem;
+}
+
+.menu a {
+  color: var(--No_activo);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 100;
+  padding: 1rem;
+  transition: 0.4s;
+  font-size: 1.25rem;
+}
+
+.menu a:hover {
+  color: var(--Activo);
+  font-weight: 700;
+}
+
+.menu-iconos,
+ul {
+  list-style: none;
+}
+
+.menu-iconos>li {
   position: relative;
   display: inline-block;
-  }
+}
 
-  .menu-iconos > li > a{
-    display: block;
-    padding: .25rem;
-  }
+.menu-iconos>li>a {
+  display: block;
+  padding: .25rem;
+}
 
-  .menu-iconos > li > a:hover{
-    display: block;
-    background-color: var(--Amarillo);
-    border-radius: 2rem;
-    transition: all .3s;
-  }
+.menu-iconos>li>a:hover {
+  display: block;
+  background-color: var(--Amarillo);
+  border-radius: 2rem;
+  transition: all .3s;
+}
+
 /* Productos  */
 
 h1 {
@@ -159,75 +162,75 @@ h1 {
 }
 
 .contenedor-catalogo {
-	display: grid;
-    margin: 2rem 10rem;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8rem;
+  display: grid;
+  margin: 2rem 10rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8rem;
 }
 
 .card {
-	position: relative;
-	overflow: hidden;
+  position: relative;
+  overflow: hidden;
   background-color: var(--Blanco);
-	display: inline-block;
+  display: inline-block;
   min-width: 20rem;
 }
 
 .card .textos {
   padding: 5%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    line-height: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  line-height: 2rem;
 }
 
-.card h2{
+.card h2 {
   color: var(--Activo);
   font-family: var(--nombre_producto);
-  font-size:small;
+  font-size: small;
   font-weight: 100;
   color: var(--No_activo);
   margin-bottom: 0rem;
   margin-top: 1rem;
 }
 
-.card h3{
-    color: var(--Activo);
-    font-family: var(--titulos);
-    font-size:large;
-    font-weight: 600;
-    margin-top: 1rem;
+.card h3 {
+  color: var(--Activo);
+  font-family: var(--titulos);
+  font-size: large;
+  font-weight: 600;
+  margin-top: 1rem;
 }
 
-.card .textos img:hover{
+.card .textos img:hover {
   transform: scale(1.1);
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .boton {
-	background: var(--Blanco_claro);
+  background: var(--Blanco_claro);
   color: var(--No_activo);
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
   margin-top: -1rem;
   font-family: var(--nombre_producto);
-	font-weight: bold;
-	font-size: 1.5rem;
-	text-align: center;
-	padding: 10px;
-	border: .15rem solid var(--No_activo);
-	cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  border: .15rem solid var(--No_activo);
+  cursor: pointer;
   border-radius: 2rem;
 }
 
-.boton:hover{
+.boton:hover {
   color: var(--Blanco);
   border: none;
-    background-color: var(--Activo);
-    transform: scale(1.05);
-    border-radius: 2rem;
+  background-color: var(--Activo);
+  transform: scale(1.05);
+  border-radius: 2rem;
 }
 
 /* Categorias*/
@@ -244,18 +247,19 @@ h1 {
   display: inline-block;
   border-radius: 2rem;
   border: .15rem solid var(--No_activo);
-	cursor: pointer;
+  cursor: pointer;
   border-radius: 2rem;
 }
 
-.categoria:hover{
+.categoria:hover {
   color: var(--Blanco);
   border: none;
-    background-color: var(--Activo);
-    transform: scale(1.05);
-    border-radius: 2rem;
+  background-color: var(--Activo);
+  transform: scale(1.05);
+  border-radius: 2rem;
 }
-  /* Footer  */
+
+/* Footer  */
 
 .contenedor__footer {
   display: grid;
@@ -328,4 +332,70 @@ h1 {
 
 .footer__redes__logos:hover {
   cursor: pointer;
+}
+
+/* Login */
+
+.login__contenedor {
+  width: min(90%, 50rem);
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.login__contenedor h1 {
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 2.8rem;
+  font-family: var(--texto_syncopate);
+}
+
+.campo {
+  margin-bottom: 1rem;
+  font-family: var(--footer_p);
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.campo label {
+  margin-bottom: 1.5rem;
+  display: block;
+  line-height: normal;
+}
+
+.campo a {
+  color: var(--No_activo);
+  text-decoration-line: underline;
+}
+
+.campo a:hover {
+  color: var(--Activo);
+}
+
+.input-text {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.login__btn {
+  border-radius: .5rem;
+  width: 100%;
+  height: 4.2rem;
+  border-radius: 7px;
+  color: var(--Blanco);
+  background: var(--No_activo);
+  font-family: var(--texto_syncopate);
+  text-align: center;
+  border: none;
+  margin-top: 1.2rem;
+}
+
+.login__btn:hover {
+  cursor: pointer;
+}
+
+.login__registro {
+  display: grid;
+  text-align: center;
 }
