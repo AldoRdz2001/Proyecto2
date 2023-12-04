@@ -29,6 +29,9 @@ body {
   font-size: 1.6rem;
 }
 
+p {
+  font-family: var(--nombre_producto);
+}
 
 /* Globales */
 footer {
@@ -42,6 +45,15 @@ footer {
 .contenedor {
   width: min(90%, 120rem);
   margin: 0 auto;
+}
+
+.contenedor--nosotros {
+  width: min(90%, 100rem);
+  margin: 0 auto;
+  background-color: var(--Blanco_claro);
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
 }
 
 .blanco {
@@ -459,4 +471,36 @@ h1 {
   cursor: pointer;
 }
 
-/*Catalogo de articulos*/
+/*Contacto*/
+.contacto--p {
+  text-align: center;
+}
+.contenedor__contacto {
+  width: min(90%, 60rem);
+  margin: 0 auto;
+  background-color: var(--Gris_claro);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.input-text--textarea {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.medio__contacto {
+  display: flex;
+}
+
+.medio__contacto p{
+  margin-left: 1rem;
+}
+
+.medio{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 4rem;
+}
